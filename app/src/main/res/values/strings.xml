@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AppCartera</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ButtonInicio">INICIO</string>
+    <string name="ButtonAgregar">AGREGAR</string>
+    <string name="ButtonGasto">GASTO</string>
+    <string name="ButtonMovi">MOVIMIENTOS</string>
+    <string name="txtcantiIngreso">MONTO DE INGRESO</string>
+    <string name="txtdescriIngreso">DESCRIPCION DE INGRESO</string>
+    <string name="txtFechaIngreso">FECHA DE INGRESO</string>
+    <string name="txtHoraingreso">HORA DE INGRESO</string>
+    <string name="ButtonGuardarIngreso">GUARDAR INGRESO</string>
+    <string name="txtcantidadGasto">CANTIDAD DE GASTO</string>
+    <string name="txtDescriGasto">DESCRIPCION DE GASTO</string>
+    <string name="txtFechaGasto">FECHA DE GASTO</string>
+    <string name="txtHoraGasto">HORA DE GASTO</string>
+    <string name="ButtonguardarGasto">GUARDAR GASTO</string>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/LayoutbtnInicio"
+        android:layout_width="match_parent"
+        android:layout_height="51dp">
+
+        <Button
+            android:id="@+id/btnInicio"
+            android:layout_width="415dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="168dp"
+            android:layout_marginEnd="155dp"
+            android:backgroundTint="?attr/colorControlActivated"
+            android:text="@string/ButtonInicio"
+            android:textColor="@color/cardview_light_background"
+            android:textColorHighlight="?android:attr/textColorHighlightInverse"
+            android:textColorLink="?android:attr/textColorHighlightInverse"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Layoutbotones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnMovimiento"
+            android:layout_width="140dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:drawableTop="@android:drawable/stat_notify_sync"
+            android:text="@string/ButtonMovi"
+            android:textColor="@color/cardview_light_background"
+            app:layout_constraintStart_toEndOf="@+id/btnGastos"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnGastos"
+            android:layout_width="130dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:drawableTop="@android:drawable/presence_busy"
+            android:text="@string/ButtonGasto"
+            android:textColor="@color/cardview_light_background"
+            app:layout_constraintStart_toEndOf="@+id/btnIngresar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnIngresar"
+            android:layout_width="130dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:autoText="false"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:drawableTop="@android:drawable/ic_input_add"
+            android:text="@string/ButtonAgregar"
+            android:textColor="@color/cardview_light_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/frameInicio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</LinearLayout>

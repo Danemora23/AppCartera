@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/colorAccent"
+    android:orientation="horizontal">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="416dp"
+        android:layout_height="49dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtIdLis"
+            android:layout_width="32dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:text="ID"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtCantidadList"
+            android:layout_width="122dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:text="Cantidad"
+            app:layout_constraintStart_toEndOf="@+id/txtIdLis"
+            app:layout_constraintTop_toBottomOf="@+id/txtDescripcionLis" />
+
+        <TextView
+            android:id="@+id/txtFechaList"
+            android:layout_width="74dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="12dp"
+            android:text="Fecha"
+            app:layout_constraintStart_toEndOf="@+id/txtDescripcionLis"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtHoraList"
+            android:layout_width="79dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:text="Hora"
+            app:layout_constraintStart_toEndOf="@+id/txtFechaList"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtDescripcionLis"
+            android:layout_width="121dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="24dp"
+            android:text="Descripcion"
+            app:layout_constraintStart_toEndOf="@+id/txtIdLis"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

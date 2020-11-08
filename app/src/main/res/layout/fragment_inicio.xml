@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentInicio">
+
+    <TextView
+        android:id="@+id/txtIngresoInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="84dp"
+        android:text="Total de Ingreso:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTotalIngreso"
+        android:layout_width="75dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="84dp"
+        android:text="0.00"
+        app:layout_constraintStart_toEndOf="@+id/txtIngresoInicio"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSaldoAnterios"
+        android:layout_width="102dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="50dp"
+        android:text="Saldo Anterios:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIngresoInicio" />
+
+    <TextView
+        android:id="@+id/txtTotalsaldoanterios"
+        android:layout_width="76dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="50dp"
+        android:text="10.00"
+        app:layout_constraintStart_toEndOf="@+id/txtSaldoAnterios"
+        app:layout_constraintTop_toBottomOf="@+id/txtTotalIngreso" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="99dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="38dp"
+        android:text="Gastos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSaldoAnterios" />
+
+    <TextView
+        android:id="@+id/txtTotalGasto"
+        android:layout_width="74dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="38dp"
+        android:text="0.00"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/txtTotalsaldoanterios" />
+
+    <TextView
+        android:id="@+id/txtSaldoActual"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="76dp"
+        android:text="Saldo Actual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/txtTotalActual"
+        android:layout_width="79dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="76dp"
+        android:text="10.00"
+        app:layout_constraintStart_toEndOf="@+id/txtSaldoActual"
+        app:layout_constraintTop_toBottomOf="@+id/txtTotalGasto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
